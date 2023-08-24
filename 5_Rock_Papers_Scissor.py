@@ -3,7 +3,7 @@ import random
 
 play = str(input("What do you choose? Rock, Paper or Scissor: "))
 
-if play not in "rockRockROCKpaperPaperPAPERscissorScissorSCISSOR" and len(play) < 4:
+if play not in "rockRockROCKpaperPaperPAPERscissorScissorSCISSOR" or len(play) < 4:
     print("ERROR, TRY AGAIN")
 else:
     if play in "rockRockROCK":
