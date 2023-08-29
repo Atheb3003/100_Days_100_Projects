@@ -1,5 +1,5 @@
-"""In this project there is a progam that simulate the throw of two dices"""
-
+#In this project, there is a program that simulates the roll of two dice.
+#MODELS OF EACH NUMBER ON THE DICE
 import random
 one =  """
 ┌─────────┐
@@ -43,11 +43,7 @@ six = """
 │  ●   ●  │
 └─────────┘
 """
-dices = int(input("How many dices do you want to use? (You can only use 1 or 2): "))
-
-random_dice_1 = None
-random_dice_2 = None
-
+#FUNTION THAT ROLLS THE DICE
 def roll_dice(random_dice):
     if random_dice == 1:
         print(one)
@@ -67,6 +63,8 @@ def roll_dice(random_dice):
     elif random_dice == 6:
         print(six)
         return 6
+    
+dices = int(input("How many dices do you want to use? (You can only use 1 or 2): "))
 
 if dices == 1:
     random_dice_1 = random.randrange(1,7)
